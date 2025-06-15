@@ -4,14 +4,28 @@ body {
     background-color: #e9ecef;
     margin: 0;
     padding: 0;
+    height: 30000px;
+    transition: background-color 0.5s ease;
 
 }
 
 .main-content {
+
     flex: 1;
     display: flex;
-    margin: 0 auto;
+    margin-left: 20vw;
     flex-direction: column;
+
+    align-items: center;     /* horizontal centering */
+    height: 100vh;           /* make sure it fills viewport height */
+    box-sizing: border-box;  /* include padding in height/width */
+
+}
+
+.small-text {
+
+    font-size: clamp(4px, 2vw, 20px);
+
 }
 
 .title-bar {
@@ -21,8 +35,10 @@ body {
 }
 
 .title {
-    margin-left: 20vw;
-    font-size: clamp(8px, 5vw, 100px);;
+
+    font-size: clamp(8px, 5vw, 100px);
+    margin-bottom: -1vh;
+    
 }
 
 .layout {
@@ -34,7 +50,7 @@ body {
 
 .sidebar {
 
-    background-color: #ced4da;
+    background-color: rgba(206, 212, 218, 0.5);
     width: 20vw;
     height: 100vh;
     font-size: clamp(8px, 2vw, 24px);
@@ -44,7 +60,7 @@ body {
 
 .sidebar-item {
 
-    margin-bottom: 2em;
+    margin-bottom: 3vh;
     margin-left: 8px;
 
 }
