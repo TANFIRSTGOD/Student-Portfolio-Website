@@ -34,6 +34,13 @@ body {
 
 }
 
+a {
+ 
+  color: inherit;       /* Use the surrounding text color */
+  text-decoration: none; /* Remove underline */
+
+}
+
 .title {
 
     font-size: clamp(8px, 5vw, 100px);
